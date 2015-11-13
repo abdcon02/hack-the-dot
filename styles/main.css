@@ -1,0 +1,38 @@
+.white {
+    background-color: white;
+}
+.black {
+    background-color: black;
+}
+
+#image {
+  background: url('../images/hippo_eats_girl.jpg') no-repeat;
+  min-width:500px;
+  min-height:500px;
+  z-index:9999;
+  display:block;
+  position: absolute;
+  top: 200px;
+  left:30%;
+}
+
+#red {
+  /*z-index: 700;*/
+  min-width: 300px;
+  min-height: 300px;
+  background-color: red;
+}
+
+#strobe {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#wrapper{
+  position:relative;
+}
