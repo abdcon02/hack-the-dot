@@ -1,0 +1,25 @@
+.container {
+    width: 100%;
+}
+
+.grass {
+    position: relative;
+    float: left;
+    height: 400px;
+    width: 100%;
+    background-color: green;
+}
+
+.top {
+    position: relative;
+    float: left;
+    height: 500px;
+    width: 100%;
+    background-color: blue;
+    text-align: center;
+}
+
+/*.frame {
+    width: 1px;
+    height: 1px;
+}*/
