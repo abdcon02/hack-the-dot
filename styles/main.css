@@ -262,3 +262,9 @@ body, html {
     height: 1px;
     width: 1px;
 }
+h1 {
+    font-size: 18px;
+    color: #fff;
+    font-family: Arial Black;
+    text-transform: uppercase;
+    }
