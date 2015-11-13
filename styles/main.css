@@ -122,3 +122,57 @@
     50% {background-position:-200px 0px;; opacity:.4;}
     75% {background-position:-100px 0px;}
 }
+
+/* Down Under */
+body, html {
+  height: 100%;
+}
+
+.wrapper-sea {
+	background:#1688a1 url(../images/sting-ray.png) no-repeat bottom center;
+	min-height:800px;
+}
+
+.contain {
+  height: 101px;
+  width: 600px;
+  margin: auto;
+}
+
+.dot {
+  float: left;
+  height: 101px;
+  width: 88px;
+  background-color:transparent;
+  background-image: url(../images/steve.png);
+  background-position: top center;
+  margin: 90px 2.5px;
+  animation: bounce 0.45s infinite ease alternate;
+}
+.dot:nth-child(1) {
+  animation-delay: -0.075s;
+}
+.dot:nth-child(2) {
+  animation-delay: -0.15s;
+}
+.dot:nth-child(3) {
+  animation-delay: -0.225s;
+}
+.dot:nth-child(4) {
+  animation-delay: -0.3s;
+}
+.dot:nth-child(5) {
+  animation-delay: -0.375s;
+}
+.dot:nth-child(6) {
+  animation-delay: -0.45s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-40px);
+  }
+}
