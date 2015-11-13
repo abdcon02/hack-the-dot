@@ -8,8 +8,9 @@
 
 #image {
   background: url('../images/hippo_eats_girl.jpg') no-repeat;
-  min-width:500px;
-  min-height:500px;
+  background-size: 80% 80%;
+  min-width:800px;
+  min-height:800px;
   z-index:9999;
   display:block;
   position: absolute;
@@ -20,7 +21,7 @@
 #red {
   /*z-index: 700;*/
   min-width: 300px;
-  min-height: 300px;
+  min-height: 500px;
   background-color: red;
 }
 
@@ -254,7 +255,7 @@ body, html {
 
 .house a {
     padding-left: 80px;
->>>>>>> 302b2c5408d63c205a7a0c077766acd6203aa007
+
 }
 
 .youtube {
