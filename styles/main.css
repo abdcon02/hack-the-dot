@@ -1,4 +1,46 @@
 
+.white {
+    background-color: white;
+}
+.black {
+    background-color: black;
+}
+
+#image {
+  background: url('../images/hippo_eats_girl.jpg') no-repeat;
+  min-width:500px;
+  min-height:500px;
+  z-index:9999;
+  display:block;
+  position: absolute;
+  top: 200px;
+  left:30%;
+}
+
+#red {
+  /*z-index: 700;*/
+  min-width: 300px;
+  min-height: 300px;
+  background-color: red;
+}
+
+#strobe {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#wrapper{
+  position:relative;
+}
+* {
+	margin:0;
+	padding:0;
+}
 .container {
     width: 100%;
 }
@@ -20,10 +62,7 @@
     text-align: center;
 }
 
-* {
-	margin:0;
-	padding:0;
-}
+
 .wrapper {
 	background:url(../images/opera-top-bg.jpg) repeat;
 	width:100%;
@@ -87,9 +126,9 @@
     margin:0 auto;
     position:relative;
     top:-156px;
-    width:120px; 
+    width:120px;
     height:156px;
-    
+
 }
 .flamegroup:before {
 	content: '';
@@ -107,7 +146,7 @@
     margin:0 auto;
     margin-left: -50px;
     position:absolute;
-    width:100px; 
+    width:100px;
     top: 25px;
     left: 10px;
     height:136px;
@@ -121,7 +160,7 @@
 #fl2 {
    animation: flicker .7s steps(1) infinite;
    -webkit-animation: flicker .7s steps(1) infinite;
-    
+
 }
 #fl3 {
    animation: flicker 1.1s steps(1) infinite;
@@ -130,20 +169,73 @@
 }
 
 @keyframes flicker { /* flame pulses */
-    0%, 
+    0%,
     100%{background-position:0px 0px; opacity:.8 }
     25% {background-position:-100px 0px;}
     50% {background-position:-200px 0px;; opacity:.4;}
     75% {background-position:-100px 0px;}
 }
 @-webkit-keyframes flicker { /* flame pulses */
-    0%, 
+    0%,
     100%{background-position:0px 0px; opacity:.8 }
     25% {background-position:-100px 0px;}
     50% {background-position:-200px 0px;; opacity:.4;}
     75% {background-position:-100px 0px;}
 }
 
+/* Down Under */
+body, html {
+  height: 100%;
+}
+
+.wrapper-sea {
+	background:#1688a1 url(../images/sting-ray.png) no-repeat bottom center;
+	min-height:800px;
+}
+
+.contain {
+  height: 101px;
+  width: 600px;
+  margin: auto;
+}
+
+.dot {
+  float: left;
+  height: 101px;
+  width: 88px;
+  background-color:transparent;
+  background-image: url(../images/steve.png);
+  background-position: top center;
+  margin: 90px 2.5px;
+  animation: bounce 0.45s infinite ease alternate;
+}
+.dot:nth-child(1) {
+  animation-delay: -0.075s;
+}
+.dot:nth-child(2) {
+  animation-delay: -0.15s;
+}
+.dot:nth-child(3) {
+  animation-delay: -0.225s;
+}
+.dot:nth-child(4) {
+  animation-delay: -0.3s;
+}
+.dot:nth-child(5) {
+  animation-delay: -0.375s;
+}
+.dot:nth-child(6) {
+  animation-delay: -0.45s;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-40px);
+  }
+}
 .logo {
     width: 120px;
     height: 150px;
@@ -157,12 +249,12 @@
 .house {
     background-color: transparent;
     margin-top: -8em;
-    
-    
+
 }
 
 .house a {
     padding-left: 80px;
+>>>>>>> 302b2c5408d63c205a7a0c077766acd6203aa007
 }
 
 .youtube {
